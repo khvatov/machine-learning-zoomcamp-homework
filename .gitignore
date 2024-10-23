@@ -1,4 +1,4 @@
 *.csv
 .venv
 .ipynb_checkpoints/
-
+model*.bin
