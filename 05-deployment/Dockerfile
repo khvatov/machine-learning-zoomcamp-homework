@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM svizor/zoomcamp-model:3.11.5-slim
 
 RUN pip install --no-cache-dir pipenv
 
@@ -8,8 +8,8 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 
 RUN pipenv install --system --ignore-pipfile
 
-COPY ["predict.py", "model_C=1.0.bin", "./"]
+COPY ["hw_web_service.py", "model1.bin", "dv.bin", "./"]
 
 EXPOSE 9696
 
-ENTRYPOINT [ "gunicorn",  "--bind=0.0.0.0:9696", "predict:app" ]
+ENTRYPOINT [ "gunicorn",  "--bind=0.0.0.0:9696", "hw_web_service:app" ]
