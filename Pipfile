@@ -12,6 +12,8 @@ flask = "*"
 gunicorn = "*"
 xgboost = "*"
 tqdm = "*"
+seaborn = "*"
+matplotlib = "*"
 
 [dev-packages]
 
