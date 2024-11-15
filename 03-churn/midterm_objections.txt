@@ -1,0 +1,9 @@
+This is what you need to do for each project
+
+Think of a problem that's interesting for you and find a dataset for that
+Describe this problem and explain how a model could be used
+Prepare the data and doing EDA, analyze important features
+Train multiple models, tune their performance and select the best model
+Export the notebook into a script
+Put your model into a web service and deploy it locally with Docker
+Bonus points for deploying the service to the cloud
