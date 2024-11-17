@@ -76,7 +76,6 @@ X_train = dv.fit_transform(train_dicts)
 val_dicts = df_val[categorical_columns + numeric_columns].to_dict(orient='records')
 X_val = dv.transform(val_dicts)
 
-
 def train(df_train, y_train, C=1.0):
     """Trains Logistic Regression model
 
