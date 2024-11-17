@@ -8,8 +8,8 @@ COPY ["Pipfile", "Pipfile.lock", "./"]
 
 RUN pipenv install --system --ignore-pipfile
 
-COPY ["hw_web_service.py", "model1.bin", "dv.bin", "./"]
+COPY ["predict.py", "model.bin", "./"]
 
 EXPOSE 9696
 
-ENTRYPOINT [ "gunicorn",  "--bind=0.0.0.0:9696", "hw_web_service:app" ]
+ENTRYPOINT [ "gunicorn",  "--bind=0.0.0.0:9696", "predict:app" ]
