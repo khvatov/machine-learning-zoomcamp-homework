@@ -14,6 +14,7 @@ xgboost = "*"
 tqdm = "*"
 seaborn = "*"
 matplotlib = "*"
+tensorflow = "*"
 
 [dev-packages]
 
