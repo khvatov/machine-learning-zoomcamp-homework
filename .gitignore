@@ -3,3 +3,4 @@
 .ipynb_checkpoints/
 clothing-dataset-small/
 model*.bin
+*.keras
