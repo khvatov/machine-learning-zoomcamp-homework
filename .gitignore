@@ -6,3 +6,4 @@ model*.bin
 *.keras
 data/
 data.zip
+*.h5
